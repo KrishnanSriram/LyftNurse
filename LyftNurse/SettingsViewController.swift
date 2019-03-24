@@ -26,26 +26,35 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
+        switch section {
+        case 0:
             return "Profile"
-        } else if section == 1 {
+        case 1:
             return "Primary Care Info"
-        } else {
+        case 2:
             return "Nurse preferences"
+        case 3:
+            return "Payment Info"
+        default:
+            return "Insurance Info"
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        switch section {
+        case 0:
             return 4
-        }
-        else if section == 1 {
+        case 1:
             return 2
-        } else {
+        case 2:
+            return 2
+        case 3:
+            return 2
+        default:
             return 2
         }
     }
@@ -96,7 +105,7 @@ extension SettingsViewController: UITableViewDataSource {
             default:
                 return UITableViewCell(frame: .zero)
             }
-        } else {
+        } else if indexPath.section == 2 {
             let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
                                        reuseIdentifier: "SimpleCell")
             switch indexPath.row {
@@ -108,6 +117,40 @@ extension SettingsViewController: UITableViewDataSource {
             case 1:
                 cell.textLabel?.text = "Security"
                 cell.detailTextLabel?.text = "Low"
+                cell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
+                return cell
+            default:
+                return UITableViewCell(frame: .zero)
+            }
+        } else if indexPath.section == 3 {
+            let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
+                                       reuseIdentifier: "SimpleCell")
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "Bank"
+                cell.detailTextLabel?.text = "JP Morgan Chace"
+                cell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
+                return cell
+            case 1:
+                cell.textLabel?.text = "Account Type"
+                cell.detailTextLabel?.text = "Card - 2342-2344-3467-8457 - 03/20"
+                cell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
+                return cell
+            default:
+                return UITableViewCell(frame: .zero)
+            }
+        } else {
+            let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
+                                       reuseIdentifier: "SimpleCell")
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "Provider"
+                cell.detailTextLabel?.text = "StateFarm"
+                cell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
+                return cell
+            case 1:
+                cell.textLabel?.text = "Type"
+                cell.detailTextLabel?.text = "SDJKLJNSDFG"
                 cell.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
                 return cell
             default:

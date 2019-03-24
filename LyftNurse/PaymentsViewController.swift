@@ -1,25 +1,25 @@
 //
-//  HomeViewController.swift
+//  PaymentsViewController.swift
 //  LyftNurse
 //
-//  Created by Krishnan Sriram Rama on 3/23/19.
+//  Created by Krishnan Sriram Rama on 3/24/19.
 //  Copyright © 2019 lyftnurse. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UITabBarController {
+class PaymentsViewController: UIViewController {
 
+    @IBAction func buttonRateServiceTapped(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "service_ratings")
+        self.showDetailViewController(vc as! ServiceRatingViewController, sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.selectedIndex = 1
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
 
     /*
     // MARK: - Navigation
@@ -31,4 +31,7 @@ class HomeViewController: UITabBarController {
     }
     */
 
+    @IBAction func buttonCloseTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil    )
+    }
 }

@@ -35,6 +35,8 @@
 		832A269622470C6100F37471 /* TimelineHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A269422470C6100F37471 /* TimelineHistoryCell.xib */; };
 		832A269922470C7500F37471 /* TimeLinRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A269722470C7500F37471 /* TimeLinRequestCell.swift */; };
 		832A269A22470C7500F37471 /* TimeLinRequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A269822470C7500F37471 /* TimeLinRequestCell.xib */; };
+		832A269C22479E2B00F37471 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A269B22479E2B00F37471 /* PaymentsViewController.swift */; };
+		832A269E22479E3C00F37471 /* ServiceRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A269D22479E3C00F37471 /* ServiceRatingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		832A269422470C6100F37471 /* TimelineHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineHistoryCell.xib; sourceTree = "<group>"; };
 		832A269722470C7500F37471 /* TimeLinRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLinRequestCell.swift; sourceTree = "<group>"; };
 		832A269822470C7500F37471 /* TimeLinRequestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLinRequestCell.xib; sourceTree = "<group>"; };
+		832A269B22479E2B00F37471 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		832A269D22479E3C00F37471 /* ServiceRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRatingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				832A269422470C6100F37471 /* TimelineHistoryCell.xib */,
 				832A269722470C7500F37471 /* TimeLinRequestCell.swift */,
 				832A269822470C7500F37471 /* TimeLinRequestCell.xib */,
+				832A269B22479E2B00F37471 /* PaymentsViewController.swift */,
+				832A269D22479E3C00F37471 /* ServiceRatingViewController.swift */,
 			);
 			path = LyftNurse;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 				832A267A2246B34A00F37471 /* ServiceCollectionViewCell.swift in Sources */,
 				832A269922470C7500F37471 /* TimeLinRequestCell.swift in Sources */,
 				832A265C2246809B00F37471 /* LogonViewController.swift in Sources */,
+				832A269C22479E2B00F37471 /* PaymentsViewController.swift in Sources */,
 				832A265A2246809B00F37471 /* AppDelegate.swift in Sources */,
+				832A269E22479E3C00F37471 /* ServiceRatingViewController.swift in Sources */,
 				832A26842246E1B700F37471 /* ServiceRequestDetailsViewController.swift in Sources */,
 				832A26722246AA0100F37471 /* TimelineViewController.swift in Sources */,
 				832A26782246B2EB00F37471 /* DashboardViewController.swift in Sources */,

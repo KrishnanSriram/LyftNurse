@@ -36,6 +36,14 @@ extension TimelineViewController: UITableViewDelegate {
             return "Request history"
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 && indexPath.section == 0 {
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "service_pay")
+            self.showDetailViewController(vc as! PaymentsViewController, sender: self)
+            tableView.deselectRow(at: indexPath, animated: false)
+        }
+    }
 }
 
 extension TimelineViewController: UITableViewDataSource {
