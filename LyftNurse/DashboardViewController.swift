@@ -18,6 +18,9 @@ class DashboardViewController: UIViewController {
     private var locationManager: CLLocationManager!
     private var currentLocation: CLLocation?
     private var selectedAnnotation: MKPointAnnotation?
+    private var serviceCost = "000"
+    private var issueTitle = "Please tap to fill"
+    private var issueDescription = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,6 +163,9 @@ extension DashboardViewController: UITableViewDelegate {
 
 extension DashboardViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
+        if serviceCost == "000" {
+            return 1
+        }
         return 3
     }
     
@@ -204,13 +210,14 @@ extension DashboardViewController: UITableViewDataSource {
                                        reuseIdentifier: "SimpleCell")
             }
             cell?.accessoryType = .detailButton
-            cell!.detailTextLabel?.text = "Have a small cut in my leg......."
-            cell!.textLabel?.text = "Cuts & bruises"
+            cell!.detailTextLabel?.text = issueDescription
+            cell!.textLabel?.text = issueTitle
             cell!.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 13.0)
             cell!.detailTextLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 13.0)
             return cell!
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceCostCell")! //1.
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceCostCell") as! ServiceCostCellTableViewCell
+            cell.serviceCostLabel.text = serviceCost
             return cell //4.
         case 2:
             switch(indexPath.row) {
@@ -240,6 +247,10 @@ extension DashboardViewController: UITableViewDataSource {
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "servicerequest")
             self.showDetailViewController(vc as! ServiceRequestDetailsViewController, sender: self)
             tableView.deselectRow(at: indexPath, animated: false)
+            serviceCost = "120"
+            issueTitle = "Cuts & bruises"
+            issueDescription = "Have a small cut in my leg......."
+            self.tableview.reloadData()
         }
         if(indexPath.section == 2 && indexPath.row == 1) {
             // present modal view
@@ -249,7 +260,7 @@ extension DashboardViewController: UITableViewDataSource {
         }
         if(indexPath.section == 2 && indexPath.row == 2) {
             // present modal view
-            let alert = UIAlertController(title: "Request submitted", message: "Your request to assist cut or a bruise injusry has been sbmitted. Please check time lines section for updates", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Request submitted", message: "Your request to assist cut or a bruise injury has been submitted. Please check time lines section for updates", preferredStyle: .alert)
             let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
                 // when ok is tapped
             }

@@ -14,7 +14,7 @@ class HomeViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.selectedIndex = 1
+        self.selectedIndex = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {

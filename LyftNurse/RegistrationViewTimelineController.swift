@@ -10,16 +10,43 @@ import UIKit
 
 class RegistrationViewTimelineController: UIViewController {
 
+    @IBOutlet weak var activityLoader: UIActivityIndicatorView!
+    @IBOutlet weak var labelStatus: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.labelStatus.text = "Loading...."
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.activityLoader.startAnimating()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.transition(with: self.labelStatus, duration: 2.00,
+                          options: .transitionCrossDissolve,
+                          animations: { [weak self] in
+                            self?.labelStatus.text = "Checking provider information with StateFarm"
+        }) { (true) in
+            UIView.transition(with: self.labelStatus, duration: 3.00,
+                              options: .transitionCrossDissolve,
+                              animations: { [weak self] in
+                                self?.labelStatus.text = "Checking Bank details"
+            }) { (true) in
+                UIView.transition(with: self.labelStatus,
+                                  duration: 2.00,
+                                  options: .transitionCrossDissolve,
+                                  animations: {
+                                    self.labelStatus.text = "All VERIFIED & APPROVED"
+                }, completion: { (true) in
+                    self.activityLoader.stopAnimating()
+                    self.activityLoader.isHidden = true
+                })
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

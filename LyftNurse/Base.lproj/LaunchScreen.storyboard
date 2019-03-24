@@ -18,14 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LyftNurse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSw-PN-SQm">
-                                <rect key="frame" x="102" y="306" width="170" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LyftNurse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSw-PN-SQm">
+                                <rect key="frame" x="102" y="306" width="171" height="55"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You are in safe hands......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-nE-eKs">
-                                <rect key="frame" x="100" y="368" width="174" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are in safe hands......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-nE-eKs">
+                                <rect key="frame" x="100" y="369" width="175" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="YId-3Q-zxy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +42,6 @@
                             <constraint firstItem="GSw-PN-SQm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="MQU-v5-45c"/>
                             <constraint firstItem="GSw-PN-SQm" firstAttribute="centerX" secondItem="A6F-nE-eKs" secondAttribute="centerX" id="ZpR-8u-JVS"/>
                             <constraint firstItem="A6F-nE-eKs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="bm6-pL-h40"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6F-nE-eKs" secondAttribute="bottom" constant="281" id="f3K-5S-j9c"/>
                             <constraint firstItem="GSw-PN-SQm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="286" id="kw7-iG-QFg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
