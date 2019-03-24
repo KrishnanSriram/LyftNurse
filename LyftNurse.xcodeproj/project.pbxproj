@@ -8,20 +8,66 @@
 
 /* Begin PBXBuildFile section */
 		832A265A2246809B00F37471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26592246809B00F37471 /* AppDelegate.swift */; };
-		832A265C2246809B00F37471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A265B2246809B00F37471 /* ViewController.swift */; };
+		832A265C2246809B00F37471 /* LogonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A265B2246809B00F37471 /* LogonViewController.swift */; };
 		832A265F2246809B00F37471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832A265D2246809B00F37471 /* Main.storyboard */; };
 		832A26612246809C00F37471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832A26602246809C00F37471 /* Assets.xcassets */; };
 		832A26642246809C00F37471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832A26622246809C00F37471 /* LaunchScreen.storyboard */; };
+		832A266C2246954F00F37471 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A266B2246954F00F37471 /* RegisterViewController.swift */; };
+		832A266E2246A17800F37471 /* RegistrationViewTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A266D2246A17700F37471 /* RegistrationViewTimelineController.swift */; };
+		832A26722246AA0100F37471 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26712246AA0100F37471 /* TimelineViewController.swift */; };
+		832A26742246AA1000F37471 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26732246AA1000F37471 /* SettingsViewController.swift */; };
+		832A26762246AAD300F37471 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26752246AAD300F37471 /* HomeViewController.swift */; };
+		832A26782246B2EB00F37471 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26772246B2EB00F37471 /* DashboardViewController.swift */; };
+		832A267A2246B34A00F37471 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26792246B34A00F37471 /* ServiceCollectionViewCell.swift */; };
+		832A267D2246B9FD00F37471 /* ServiceCostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A267B2246B9FD00F37471 /* ServiceCostCellTableViewCell.swift */; };
+		832A267E2246B9FD00F37471 /* ServiceCostCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A267C2246B9FD00F37471 /* ServiceCostCellTableViewCell.xib */; };
+		832A26802246D40300F37471 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A267F2246D40300F37471 /* TableHeaderView.swift */; };
+		832A26822246DCFB00F37471 /* NurseRatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26812246DCFB00F37471 /* NurseRatingsViewController.swift */; };
+		832A26842246E1B700F37471 /* ServiceRequestDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26832246E1B700F37471 /* ServiceRequestDetailsViewController.swift */; };
+		832A26872246E29600F37471 /* ReviewSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26852246E29600F37471 /* ReviewSummaryTableViewCell.swift */; };
+		832A26882246E29600F37471 /* ReviewSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A26862246E29600F37471 /* ReviewSummaryTableViewCell.xib */; };
+		832A268B2246FA2100F37471 /* NurseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A26892246FA2100F37471 /* NurseTableViewCell.swift */; };
+		832A268C2246FA2100F37471 /* NurseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A268A2246FA2100F37471 /* NurseTableViewCell.xib */; };
+		832A268E2246FF7F00F37471 /* TableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A268D2246FF7F00F37471 /* TableFooterView.swift */; };
+		832A26912247014900F37471 /* SubmitButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A268F2247014900F37471 /* SubmitButtonCell.swift */; };
+		832A26922247014900F37471 /* SubmitButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A26902247014900F37471 /* SubmitButtonCell.xib */; };
+		832A269522470C6100F37471 /* TimelineHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A269322470C6100F37471 /* TimelineHistoryCell.swift */; };
+		832A269622470C6100F37471 /* TimelineHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A269422470C6100F37471 /* TimelineHistoryCell.xib */; };
+		832A269922470C7500F37471 /* TimeLinRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A269722470C7500F37471 /* TimeLinRequestCell.swift */; };
+		832A269A22470C7500F37471 /* TimeLinRequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832A269822470C7500F37471 /* TimeLinRequestCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		832A26562246809B00F37471 /* LyftNurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyftNurse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		832A26592246809B00F37471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		832A265B2246809B00F37471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		832A265B2246809B00F37471 /* LogonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonViewController.swift; sourceTree = "<group>"; };
 		832A265E2246809B00F37471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		832A26602246809C00F37471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832A26632246809C00F37471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832A26652246809C00F37471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832A266B2246954F00F37471 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		832A266D2246A17700F37471 /* RegistrationViewTimelineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewTimelineController.swift; sourceTree = "<group>"; };
+		832A26712246AA0100F37471 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		832A26732246AA1000F37471 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		832A26752246AAD300F37471 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		832A26772246B2EB00F37471 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		832A26792246B34A00F37471 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		832A267B2246B9FD00F37471 /* ServiceCostCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCostCellTableViewCell.swift; sourceTree = "<group>"; };
+		832A267C2246B9FD00F37471 /* ServiceCostCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCostCellTableViewCell.xib; sourceTree = "<group>"; };
+		832A267F2246D40300F37471 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		832A26812246DCFB00F37471 /* NurseRatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseRatingsViewController.swift; sourceTree = "<group>"; };
+		832A26832246E1B700F37471 /* ServiceRequestDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestDetailsViewController.swift; sourceTree = "<group>"; };
+		832A26852246E29600F37471 /* ReviewSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		832A26862246E29600F37471 /* ReviewSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		832A26892246FA2100F37471 /* NurseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseTableViewCell.swift; sourceTree = "<group>"; };
+		832A268A2246FA2100F37471 /* NurseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NurseTableViewCell.xib; sourceTree = "<group>"; };
+		832A268D2246FF7F00F37471 /* TableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterView.swift; sourceTree = "<group>"; };
+		832A268F2247014900F37471 /* SubmitButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonCell.swift; sourceTree = "<group>"; };
+		832A26902247014900F37471 /* SubmitButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubmitButtonCell.xib; sourceTree = "<group>"; };
+		832A269322470C6100F37471 /* TimelineHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineHistoryCell.swift; sourceTree = "<group>"; };
+		832A269422470C6100F37471 /* TimelineHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineHistoryCell.xib; sourceTree = "<group>"; };
+		832A269722470C7500F37471 /* TimeLinRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLinRequestCell.swift; sourceTree = "<group>"; };
+		832A269822470C7500F37471 /* TimeLinRequestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLinRequestCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +101,34 @@
 			isa = PBXGroup;
 			children = (
 				832A26592246809B00F37471 /* AppDelegate.swift */,
-				832A265B2246809B00F37471 /* ViewController.swift */,
+				832A267B2246B9FD00F37471 /* ServiceCostCellTableViewCell.swift */,
+				832A267C2246B9FD00F37471 /* ServiceCostCellTableViewCell.xib */,
+				832A265B2246809B00F37471 /* LogonViewController.swift */,
+				832A266B2246954F00F37471 /* RegisterViewController.swift */,
+				832A266D2246A17700F37471 /* RegistrationViewTimelineController.swift */,
 				832A265D2246809B00F37471 /* Main.storyboard */,
 				832A26602246809C00F37471 /* Assets.xcassets */,
 				832A26622246809C00F37471 /* LaunchScreen.storyboard */,
 				832A26652246809C00F37471 /* Info.plist */,
+				832A26712246AA0100F37471 /* TimelineViewController.swift */,
+				832A26732246AA1000F37471 /* SettingsViewController.swift */,
+				832A26752246AAD300F37471 /* HomeViewController.swift */,
+				832A26772246B2EB00F37471 /* DashboardViewController.swift */,
+				832A26792246B34A00F37471 /* ServiceCollectionViewCell.swift */,
+				832A267F2246D40300F37471 /* TableHeaderView.swift */,
+				832A268D2246FF7F00F37471 /* TableFooterView.swift */,
+				832A26812246DCFB00F37471 /* NurseRatingsViewController.swift */,
+				832A26832246E1B700F37471 /* ServiceRequestDetailsViewController.swift */,
+				832A26852246E29600F37471 /* ReviewSummaryTableViewCell.swift */,
+				832A26862246E29600F37471 /* ReviewSummaryTableViewCell.xib */,
+				832A26892246FA2100F37471 /* NurseTableViewCell.swift */,
+				832A268A2246FA2100F37471 /* NurseTableViewCell.xib */,
+				832A268F2247014900F37471 /* SubmitButtonCell.swift */,
+				832A26902247014900F37471 /* SubmitButtonCell.xib */,
+				832A269322470C6100F37471 /* TimelineHistoryCell.swift */,
+				832A269422470C6100F37471 /* TimelineHistoryCell.xib */,
+				832A269722470C7500F37471 /* TimeLinRequestCell.swift */,
+				832A269822470C7500F37471 /* TimeLinRequestCell.xib */,
 			);
 			path = LyftNurse;
 			sourceTree = "<group>";
@@ -122,9 +191,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832A26882246E29600F37471 /* ReviewSummaryTableViewCell.xib in Resources */,
+				832A269622470C6100F37471 /* TimelineHistoryCell.xib in Resources */,
+				832A267E2246B9FD00F37471 /* ServiceCostCellTableViewCell.xib in Resources */,
 				832A26642246809C00F37471 /* LaunchScreen.storyboard in Resources */,
+				832A268C2246FA2100F37471 /* NurseTableViewCell.xib in Resources */,
 				832A26612246809C00F37471 /* Assets.xcassets in Resources */,
+				832A26922247014900F37471 /* SubmitButtonCell.xib in Resources */,
 				832A265F2246809B00F37471 /* Main.storyboard in Resources */,
+				832A269A22470C7500F37471 /* TimeLinRequestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +210,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				832A265C2246809B00F37471 /* ViewController.swift in Sources */,
+				832A26872246E29600F37471 /* ReviewSummaryTableViewCell.swift in Sources */,
+				832A26912247014900F37471 /* SubmitButtonCell.swift in Sources */,
+				832A266E2246A17800F37471 /* RegistrationViewTimelineController.swift in Sources */,
+				832A268E2246FF7F00F37471 /* TableFooterView.swift in Sources */,
+				832A268B2246FA2100F37471 /* NurseTableViewCell.swift in Sources */,
+				832A266C2246954F00F37471 /* RegisterViewController.swift in Sources */,
+				832A26822246DCFB00F37471 /* NurseRatingsViewController.swift in Sources */,
+				832A269522470C6100F37471 /* TimelineHistoryCell.swift in Sources */,
+				832A26742246AA1000F37471 /* SettingsViewController.swift in Sources */,
+				832A26762246AAD300F37471 /* HomeViewController.swift in Sources */,
+				832A267D2246B9FD00F37471 /* ServiceCostCellTableViewCell.swift in Sources */,
+				832A26802246D40300F37471 /* TableHeaderView.swift in Sources */,
+				832A267A2246B34A00F37471 /* ServiceCollectionViewCell.swift in Sources */,
+				832A269922470C7500F37471 /* TimeLinRequestCell.swift in Sources */,
+				832A265C2246809B00F37471 /* LogonViewController.swift in Sources */,
 				832A265A2246809B00F37471 /* AppDelegate.swift in Sources */,
+				832A26842246E1B700F37471 /* ServiceRequestDetailsViewController.swift in Sources */,
+				832A26722246AA0100F37471 /* TimelineViewController.swift in Sources */,
+				832A26782246B2EB00F37471 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +375,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V252TK6927;
 				INFOPLIST_FILE = LyftNurse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyftnurse.client.LyftNurse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyftnurse.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,12 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V252TK6927;
 				INFOPLIST_FILE = LyftNurse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyftnurse.client.LyftNurse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyftnurse.patient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
